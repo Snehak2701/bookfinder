@@ -1,24 +1,69 @@
-# Logs
-logs
-*.log
+# Node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Env files (do NOT ignore lockfiles like package-lock.json / yarn.lock)
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/dist
+/build
+/.next
+/out
+/.parcel-cache
+/.vercel
+/.vercel_build_output
+
+# Misc caches and generated
+.cache/
+.cache-loader/
+.vite/
+.tmp/
+.cypress/
+coverage/
+coverage-final.json
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# System files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# macOS Finder tags
+.AppleDouble
+.LSOverride
+
+# Windows image file cache
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# JetBrains
+*.iml
+/.idea/
+
+# Sentry / Source maps (if you upload them separately you may want to ignore local copies)
+*.map
+
+# Uploaded assets / local-only secrets (adjust if you need some tracked)
+uploads/
+secrets/
+
+# Optional: ignore local testing DBs, sqlite files, etc.
+*.sqlite
+*.sqlite3
