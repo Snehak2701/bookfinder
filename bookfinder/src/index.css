@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ensure images behave consistently and don't allow text to wrap around */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+/* keep text blocks from pushing outside flex children */
+.min-h-0 { min-height: 0; }
+
+/* small helpers */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* subtle card ring effect preserved behind the card */
+.group:hover > .absolute > .blur-md {
+  /* intentionally empty: visual handled by utility classes above */
+}
